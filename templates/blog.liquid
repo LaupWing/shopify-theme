@@ -1,0 +1,14 @@
+<article>
+   <h2>{{ page.title }}</h2>
+   <p class="meta">Published on {{ page.date | date: "%B %d, %Y" }}</p>
+
+   {{ content }}
+
+   {% if page.tags %}
+      <p>Tags: {{ page.tags | join: ', ' }}</p>
+   {% endif %}
+
+   {% if page.author %}
+      <p>Author: {{ page.author }}</p>
+   {% endif %}
+</article>
