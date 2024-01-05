@@ -11,7 +11,7 @@
             <li>
                <img src="{{item.image | image_url: width: 200}}" alt="">
                <p>{{ item.title }}</p>
-               <p>{{ item.price | money }}</p>
+               <p>{{ item.final_lineprice | money }}</p>
                <input name="updates[]" value="{{item.quantity}}">
                <a href="/cart/remove?item={{ item.id }}">Remove</a>
             </li>
